@@ -6,8 +6,8 @@ const raleway = Raleway({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main className={raleway.className}>
-      <Component {...pageProps} />;
+    <main className={`bg-light dark:bg-dark ${raleway.className}`}>
+      <Component {...pageProps} />
     </main>
   );
 }
